@@ -1,5 +1,5 @@
 {
-    "name": "forlabs/lightsaml",
+    "name": "karlaustin/lightsaml",
     "license": "MIT",
     "type": "library",
     "description": "Fork of Light SAML 2.0 PHP library",
@@ -17,11 +17,23 @@
             "email": "hello@forlabs.fr",
             "homepage": "https://github.com/4Labs/",
             "role": "Developer"
+        },
+        {
+            "name": "Joshua Jarvis",
+            "email": "",
+            "homepage": "https://github.com/ixonstater",
+            "role": "Developer"
+        },
+        {
+            "name": "Karl Austin",
+            "email": "",
+            "homepage": "https://github.com/KarlAustin",
+            "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/4Labs/lightsaml/issues",
-        "source": "https://github.com/4Labs/lightSAML",
+        "issues": "https://github.com/KarlAustin/lightSAML/issues",
+        "source": "https://github.com/KarlAustin/lightSAML",
         "docs": "http://www.lightsaml.com/LightSAML-Core/"
     },
     "autoload": {
