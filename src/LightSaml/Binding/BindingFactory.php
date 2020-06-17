@@ -135,6 +135,11 @@ class BindingFactory implements BindingFactoryInterface
         } elseif (array_key_exists('SAMLart', $post)) {
             return SamlConstants::BINDING_SAML2_HTTP_ARTIFACT;
         } else {
+            // Sometimes we might get a POST request with GET parameters set!!!
+            $get = $request->query->all();
+            if (array_key_exists('SAMLRequest', $get) || array_key_exists('SAMLResponse', $get)) {
+                return SamlConstants::BINDING_SAML2_HTTP_REDIRECT;
+            }
             if ($contentType = $request->headers->get('CONTENT_TYPE')) {
                 // Remove charset
                 if (false !== $pos = strpos($contentType, ';')) {
